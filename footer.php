@@ -25,6 +25,7 @@
 	    appAmoSpace.navSpy();
 	    appAmoSpace.skillsChart();
 		appAmoSpace.isoTop();
+		appAmoSpace.navbarCollapse();
 	});
 </script>
 

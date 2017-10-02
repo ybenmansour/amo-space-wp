@@ -23,6 +23,21 @@ var appAmoSpace = {
         });
     },
 
+    navbarCollapse : function () {
+
+        /*$(document).on('click','.navbar-collapse.in',function(e) {
+            if( $(e.target).is('a') ) {
+                $('#navbar-collapse').collapse('hide');
+            }
+        });*/
+        $("#navbar-collapse").on('show.bs.collapse', function() {
+            $('a').click(function() {
+                $("#navbar-collapse").collapse('hide');
+            });
+        });
+
+    },
+
     smoothScroll: function() {
         // Smooth Scrolling
         $('a[href*=#]:not([href=#carousel-example-generic], [href=#testimonials-carousel])').click(function() {
