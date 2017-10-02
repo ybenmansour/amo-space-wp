@@ -2,39 +2,37 @@
 
 var appAmoSpace = {
 
-    preLoader: function(){
+    /*preLoader: function(){
     	$(window).load(function() {
-    		$('.pre-loader').delay(1000).fadeOut('slow');
+            //$('.pre-loader').delay(1000).fadeOut('slow');
     	});
-    },
+    },*/
 
     navSpy: function(){
         /* affix the navbar after scroll below header */
         $('#nav.top-bar').affix({
             offset: {
-                top: $(window).height()- 100
+                top: $(window).height()-70
             }
         });
 
         /* highlight the top nav as scrolling occurs */
         $('body').scrollspy({
-            target: '#nav'
+            target: '#nav',
+            offset: 40
         });
     },
 
     smoothScroll: function() {
         // Smooth Scrolling
         $('a[href*=#]:not([href=#carousel-example-generic], [href=#testimonials-carousel])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                 scrollTop: target.offset().top 
+                }, 1000);
+                return false;
             }
         });
     },
@@ -87,7 +85,6 @@ var appAmoSpace = {
 
 };
 
-
 $(document).ready(function() {
-	appAmoSpace.scollToTop();
+    appAmoSpace.scollToTop();
 });

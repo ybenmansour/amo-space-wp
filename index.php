@@ -1,6 +1,5 @@
 <?php  get_header(); ?>	
 		
-		
 		<section id="background" class="default-cloud">
         	<div class="bg animated zoomIn"></div>
 			<div class="lightning">
@@ -781,12 +780,9 @@
                     <div class="col-md-6">
                         <div class="contact-details">
                             <div class="detail">
-                                <h4>Amo space</h4>
+                                <h4>amo space</h4>
                             </div>
                             <address>
-								<!-- <p>
-									<span> AMO </span>space
-								</p> -->
 								<p>
 									<i class="fa fa-map-marker"></i>&nbsp;<span> 23, Boulvard Murat 750616. Paris, France </span>
 								</p>

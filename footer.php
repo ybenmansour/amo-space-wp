@@ -18,21 +18,13 @@
 
 <?php wp_footer(); ?>	
 
-<!-- <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/jquery.easypiechart.min.js"></script> 
-<script src="js/waypoints.min.js"></script>
-<script src="js/script.js"></script>-->
-
 <script>
 	$(document).ready(function() {
-		appAmoSpace.preLoader();
-	    appAmoSpace.smoothScroll();
+		appAmoSpace.smoothScroll();
 	    appAmoSpace.animateScript();
 	    appAmoSpace.navSpy();
 	    appAmoSpace.skillsChart();
-	    appAmoSpace.isoTop();
+		appAmoSpace.isoTop();
 	});
 </script>
 

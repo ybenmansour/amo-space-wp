@@ -24,4 +24,15 @@
 	
 	add_action ('wp_enqueue_scripts','b2w_theme_js');
 
+	/**
+ 	 * Add HTML5 shiv, Respond.js for IE8
+ 	 */
+	add_action( 'wp_head', 'ie_support_header', 99 );
+	function ie_support_header() {
+		echo '<!--[if lt IE 9]>' . "\n";
+		echo '<script src="' . esc_url( get_template_directory_uri() . '/js/html5shiv.min.js' ) . '"></script>' . "\n";
+		echo '<script src="' . esc_url( get_template_directory_uri() . '/js/respond.min.js' ) . '"></script>' . "\n";
+		echo '<![endif]-->' . "\n";
+	}
+
 ?>
